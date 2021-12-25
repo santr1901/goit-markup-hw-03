@@ -8,12 +8,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="./css/styles.css" />
     
       </head>
 <body>
     <header class="header">
-        <a class="link logo" href="index.html">Web<span class="header-logo">Studio</span></a>
+        <div class="container header-container">
+        <a class="link logo header-logo-margin" href="index.html">Web<span class="header-logo">Studio</span></a>
         <nav class="header-nav">
           <ul class="list header-list">
             <li class="header-item"><a class="link header-link" href="index.html">Студия</a></li>
@@ -25,10 +31,12 @@
           <li class="contact-item"><a class="link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="contact-item"><a class="link header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+      </div>
       </header>
 
 <main>
-    <section>
+    <section class="portfolio-main">
+        <div class="container">
         <h1 class="portfolio-title">Наши работы,портфолио,примеры работ</h1>
         <ul class="list filters-list">
             <li class="filters-item"><button type="button" class="filters-btn current-filter">Все</button></li>
@@ -46,6 +54,7 @@
                 <p class="example-type">Веб-сайт</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img2.jpg" width="370" height="294"  alt="Дизайн">
@@ -53,6 +62,7 @@
                 <p class="example-type">Дизайн</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img3.jpg" width="370" height="294"  alt="Приложение">
@@ -60,6 +70,7 @@
                 <p class="example-type">Приложение</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img4.jpg" width="370" height="294"  alt="Проект">
@@ -67,6 +78,7 @@
                 <p class="example-type">Маркетинг</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img5.jpg" width="370" height="294" alt="Приложение">
@@ -74,6 +86,7 @@
                 <p class="example-type">Приложение</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img6.jpg" width="370" height="294" alt="Веб-сайт">
@@ -81,6 +94,7 @@
                 <p class="example-type">Веб-сайт</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img7.jpg" width="370" height="294"  alt="Дизайн">
@@ -88,6 +102,7 @@
                 <p class="example-type">Дизайн</p>
                 </a>
             </li>
+
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img8.jpg" width="370" height="294"  alt="Маркетинг">
@@ -95,6 +110,7 @@
                 <p class="example-type">Маркетинг</p>
                 </a>
             </li>
+            
             <li class="example-item">
                 <a class="link" href="" target="_blank" rel="noreferrer noopener">
                 <img src="./images/portfolio/img9.jpg" width="370" height="294"  alt="Приложение">
@@ -103,11 +119,13 @@
                 </a>
             </li>
         </ul>
+    </div>
     </section>
 </main>
 
 <footer class="footer">
-    <a class="link logo" href="index.html">Web<span class="footer-logo">Studio</span></a>
+    <div class="container">
+    <a class="link logo footer-logo-margin" href="index.html">Web<span class="footer-logo">Studio</span></a>
     <address>
     <ul class="list footer-list">
       <li class="footer-item"><a class="link footer-address" href="https://goo.gl/maps/YbPivX2JFZGYq7XS9" target="_blank" rel="noreferrer noopener">г.Киев, пр-т Леси Украинки,26</a></li>
@@ -115,6 +133,7 @@
       <li class="footer-item"><a class="link footer-info" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
   </address>
+</div>
   </footer>
 </body>
 </html>
