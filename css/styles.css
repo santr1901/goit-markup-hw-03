@@ -50,9 +50,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*------------------------LOGO-----------------------------*/
 .logo{
 font-family: 'Raleway', sans-serif;
@@ -84,9 +87,7 @@ display: flex;
 
 /*----------------------HEADER-----------------------------*/
 .header{
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid var(--header-line-color);
+  border-bottom: 1px solid var(--header-line-color);
 }
 
 .header-container {
@@ -97,6 +98,8 @@ display: flex;
 .header-list {
   color: var(--first-color);
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link{
@@ -169,10 +172,6 @@ border-radius: 4px;
   background-color: var(--btn-hover-color);
 }
 
-.advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .advantage-list{
   display: flex;
 }
@@ -185,14 +184,11 @@ border-radius: 4px;
 }
 
 .advantage-title {
-  margin-bottom: 10px;
-}
-
-.advantage-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--first-color);
+  margin-bottom: 10px;
 }
 
 .main-title {
@@ -218,8 +214,6 @@ margin-bottom: 50px;
 
 .team {
   background-color: var(--bkground-color-two);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-list {
@@ -279,10 +273,6 @@ margin-bottom: 10px;
   margin-bottom: 9px;
 }
 /*--------------------Portfolio------------------------------*/
-.portfolio-main {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 .portfolio-title {
   position: absolute;
   width: 1px;
@@ -342,8 +332,13 @@ min-height: 38px;
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--third-color);
-  outline: 1px solid var(--border-line-color);
-  padding-bottom: 20px;
+}
+
+.border {
+  border-left: 1px solid var(--border-line-color);
+  border-right: 1px solid var(--border-line-color);
+  border-bottom: 1px solid var(--border-line-color);
+  padding: 20px 0 20px 24px;
 }
 
 .example-name {
@@ -352,11 +347,9 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color:var(--first-color);
-margin: 20px 0 0px 24px ;
 }
 
 .example-type {
 font-size: 16px;
 line-height: 1.87;
-margin-left: 24px;
 }
