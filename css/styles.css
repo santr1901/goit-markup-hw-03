@@ -9,6 +9,7 @@
 --header-line-color: #ECECEC;
 --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 --border-line-color: #EEEEEE;
+--hover-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 p,h1,h2,h3,h4,h5,h6 {
@@ -98,14 +99,16 @@ display: flex;
 .header-list {
   color: var(--first-color);
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 }
 
 .header-link{
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
+padding-top: 32px;
+padding-bottom: 32px;
+display: block;
 }
 
 .header-link:hover,
@@ -161,8 +164,7 @@ letter-spacing: 0.06em;
 color: var(--third-color);
 background-color: var(--accent-color);
 cursor: pointer;
-min-width: 200px;
-min-height: 50px;
+padding: 10px 32px;
 border-color: transparent;
 border-radius: 4px;
 }
@@ -174,13 +176,12 @@ border-radius: 4px;
 
 .advantage-list{
   display: flex;
-}
-.advantage-item:not(:last-child) {
-  margin-right: 30px;
+  margin-left: -30px;
 }
 
 .advantage-item {
-  flex-basis: calc(100%/4);
+  flex-basis: calc(100%/4 - 30px);
+  margin-left: 30px;
 }
 
 .advantage-title {
@@ -206,10 +207,12 @@ margin-bottom: 50px;
 
 .work-list {
   display: flex;
+  margin-left: -30px;
 }
 
-.work-item:not(:last-child) {
-  margin-right: 30px;
+.work-item {
+  flex-basis: calc(100%/3 - 30px);
+  margin-left: 30px;
 }
 
 .team {
@@ -218,10 +221,7 @@ margin-bottom: 50px;
 
 .team-list {
   display: flex;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-left: -30px;
 }
 
 .team-item {
@@ -231,6 +231,8 @@ margin-bottom: 50px;
   border-bottom-right-radius: 4px;
   box-shadow: var(--box-shadow);
   padding-bottom: 30px;
+  flex-basis: calc(100%/4 - 30px);
+  margin-left: 30px;
 }
 .team-name,
 .team-position{
@@ -315,6 +317,7 @@ min-height: 38px;
 .current-filter{
   color: var(--third-color);
   background-color: var(--accent-color);
+  box-shadow: var(--hover-button);
 }
 
 .example-list {
@@ -338,7 +341,7 @@ min-height: 38px;
   border-left: 1px solid var(--border-line-color);
   border-right: 1px solid var(--border-line-color);
   border-bottom: 1px solid var(--border-line-color);
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px;
 }
 
 .example-name {
